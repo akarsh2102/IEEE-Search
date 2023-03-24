@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+  <title>IEEE Search</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <body>
+    <h1>Search for articles on the IEEE Xplore Digital Library</h1>
+    <form action="/search" method="post">
+      <label for="search_term">Search Term:</label>
+      <br>
+      <input type="text" id="search_term" name="search_term"><br>
+      <label for="page_no">Page No:</label>
+      <br>
+      <input type="text" id="page_no" name="page_no" value="1"><br>
+      <button type="submit" value="Search">Search</button>
+    </form>
+  </body>
+</html>
